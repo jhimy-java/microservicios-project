@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
-@FeignClient(name = "moto-service", url = "http://localhost:8003")
+@FeignClient(name = "moto-service")
 public interface MotoFeignClient {
 
     @PostMapping("/moto")  // Define la ruta directamente en el método
